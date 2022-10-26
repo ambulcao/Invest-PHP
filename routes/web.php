@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'App\Http\Controllers\Controller@homepage');
+Route::get('/cadastro', 'App\Http\Controllers\Controller@cadastrar');
+Route::get('/login', 'App\Http\Controllers\Controller@fazerLogin');
+
