@@ -38,6 +38,8 @@ class CreateUsersTable extends Migration
             $table->timestamps();
             $table->softDeletes();
 		});
+
+
 	}
 
 	/**
@@ -52,5 +54,7 @@ class CreateUsersTable extends Migration
         });
 
 		Schema::drop('users');
+
+
 	}
 }
